@@ -55,6 +55,7 @@ public class CarroServiceImplTest {
         carroService.desligar(carro);
 
         Assert.assertFalse(carro.isLigado());
+        Assert.assertEquals(0, carro.getVelocidadeAtual());
 
     }
 
